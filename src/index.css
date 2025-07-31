@@ -1,0 +1,73 @@
+
+
+@import "tailwindcss";
+
+/* src/index.css */
+
+@tailwind utilities;
+
+/* Optional: Import Google Fonts if you use custom fonts (e.g., Inter, Fira Code) */
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap'); */
+
+/* Base body styles for smooth transitions and scroll behavior */
+body {
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+  scroll-behavior: smooth;
+  /* Apply the starry background directly to the body for the Hero Section */
+  background-color: #0D1117; /* Base dark background */
+  background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 20px),
+    radial-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05) 1px, transparent 10px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  animation: move-background 150s linear infinite; /* Subtle background movement */
+}
+
+/* Custom scrollbar for a polished look (Webkit browsers like Chrome/Edge/Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A2E; /* Dark background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4299E1; /* Accent blue for the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #63B3ED; /* Lighter blue on hover */
+}
+
+/* Custom scrollbar for Firefox */
+html {
+  scrollbar-color: #4299E1 #1A1A2E; /* thumb track */
+  scrollbar-width: thin; /* Make the scrollbar thin */
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Keyframes for the rainbow text animation */
+@keyframes rainbow-text-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Keyframes for the subtle background stars movement */
+@keyframes move-background {
+  from {
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+  to {
+    background-position: 550px 550px, 390px 610px, 380px 520px, 220px 250px;
+  }
+}
