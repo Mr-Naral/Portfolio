@@ -56,7 +56,7 @@ const socialLinks = [
       </svg>
     ),
     url: 'https://github.com/Mr-Naral',
-    color: 'hover:bg-gray-800'
+    color: 'hover:bg-black'
   }
 ];
 
@@ -153,7 +153,7 @@ const AboutSection = ({ isDarkMode }) => {
           >
             <div className="relative">
               {/* Profile Photo Container */}
-              <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl">
+              <div className="w-64 h-full rounded-xl overflow-hidden border-4 border-blue-500 shadow-2xl">
                 <img 
                   src="/profile_photo.jpeg" 
                   alt="Murlikrishna Naral" 

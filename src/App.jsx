@@ -10,8 +10,8 @@ import Footer from './components/Footer';
 function App() {
   // Simple state management for dark mode
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check if user has a saved preference
-    const saved = localStorage.getItem('theme');
+  // Check if user has a saved preference
+  const saved = localStorage.getItem('theme');
     return saved === 'dark';
   });
 

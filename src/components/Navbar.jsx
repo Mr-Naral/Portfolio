@@ -69,7 +69,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
           animate={{ opacity: 1 }} // Fade in
           transition={{ duration: 0.8, delay: 0.3 }} // Animation duration and delay
         >
-          <p>{"</>MrN "}</p>
+          <p>{"< Mr_N />"}</p>
         </motion.a>
 
         {/* Desktop Navigation Links */}

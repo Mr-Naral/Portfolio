@@ -26,7 +26,7 @@ const ProjectCard = ({ title, description, image, liveLink, codeLink, isDarkMode
 
   return (
     <motion.div
-      className={`rounded-lg shadow-xl overflow-hidden p-6 border transition-colors duration-300 ${
+      className={`rounded-lg  shadow-xl overflow-hidden p-6 border transition-colors duration-300 ${
         isDarkMode 
           ? 'bg-[#161B22] shadow-2xl border-[#2D3748]' 
           : 'bg-white border-gray-200'
@@ -41,7 +41,7 @@ const ProjectCard = ({ title, description, image, liveLink, codeLink, isDarkMode
     >
       {/* Project Image (if provided) */}
       {image && (
-        <img src={image} alt={title} className="w-full h-48 object-cover rounded-md mb-4" />
+        <img src={image} alt={title} className="w-full  object-cover rounded-md mb-4" />
       )}
       {/* Project Title */}
       <h3 className={`text-3xl font-bold mb-2 transition-colors duration-300 ${
@@ -56,13 +56,13 @@ const ProjectCard = ({ title, description, image, liveLink, codeLink, isDarkMode
         {description}
       </p>
       {/* Action Buttons (Live Demo, Code) */}
-      <div className="flex justify-end space-x-4 mt-6">
+      <div className="flex justify-start  space-x-4 mb-2 ">
         {liveLink && (
           <motion.a
             href={liveLink}
             target="_blank" // Open in new tab
             rel="noopener noreferrer" // Security best practice
-            className={`px-6 py-2 rounded-full text-md font-semibold transition-colors duration-300 ${
+            className={`px-6 py-2 mb-2 align-centre rounded-full text-md font-semibold transition-colors duration-300 ${
               isDarkMode 
                 ? 'bg-[#4299E1] text-gray-900 hover:bg-[#63B3ED] hover:text-white' 
                 : 'bg-blue-600 text-white hover:bg-blue-700'
@@ -73,7 +73,7 @@ const ProjectCard = ({ title, description, image, liveLink, codeLink, isDarkMode
             Live Demo
           </motion.a>
         )}
-        {codeLink && (
+        {/* {codeLink && (
           <motion.a
             href={codeLink}
             target="_blank"
@@ -88,7 +88,7 @@ const ProjectCard = ({ title, description, image, liveLink, codeLink, isDarkMode
           >
             Code
           </motion.a>
-        )}
+        )} */}
       </div>
     </motion.div>
   );

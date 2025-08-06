@@ -117,7 +117,7 @@ const HeroSection = ({ isDarkMode }) => {
               My Resume
             </motion.a>
             {/* Mail Me Button */}
-            <motion.a
+            {/* <motion.a
               href="mailto:murlikrishnanaral2004@gmail.com"
               className={`inline-block px-8 py-3 rounded-full text-lg font-semibold
                          border shadow-lg transition-all duration-300 ${
@@ -129,7 +129,7 @@ const HeroSection = ({ isDarkMode }) => {
               whileTap={{ scale: 0.95 }}
             >
               Mail Me
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         </motion.div>
 
